@@ -1,0 +1,10 @@
+.order-section {
+  background: #181818;
+  position: relative;
+}
+.order-section:before {
+  content: url(./../../img/Polygon.png);
+  position: absolute;
+  top: -22px;
+  right: 15%;
+}

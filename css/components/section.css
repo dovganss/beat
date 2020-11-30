@@ -1,0 +1,25 @@
+.section {
+  height: 100vh;
+  min-height: 774px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section--font-color--white {
+  color: white;
+}
+.section--font-color--white .section__title {
+  color: inherit;
+  margin-bottom: 49px;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+}
+.section__title--reviews {
+  margin-bottom: 22px;
+}
