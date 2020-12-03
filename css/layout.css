@@ -14,15 +14,15 @@ body {
 
 .wrapper {
   position: relative;
-  width: 95%;
-  max-width: 940px;
+  width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
+  width: 95%;
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
   position: relative;
 }
 

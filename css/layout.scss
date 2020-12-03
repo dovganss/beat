@@ -17,15 +17,15 @@ $baseFontSize: 16px;
 
   .wrapper {
     position: relative;
-    width: 95%;
-    max-width: $containerWidth;
+    width: 100%;
     min-height: 100%;
     overflow: hidden;
   }
 
   .container {
+    width: 95%;
     margin: 0 auto;
-    width: $containerWidth;
+    max-width: $containerWidth;
     position: relative;
   }
 
