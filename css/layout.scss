@@ -17,8 +17,8 @@ $baseFontSize: 16px;
 
   .wrapper {
     position: relative;
-    width: 100%;
-    min-width: $containerWidth + 20px;
+    width: 95%;
+    max-width: $containerWidth;
     min-height: 100%;
     overflow: hidden;
   }
