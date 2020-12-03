@@ -1,12 +1,23 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
-  
-  html, body {
+ 
+ html {
+   font-size: $baseFontSize;
+
+   @include tablets {
+     font-size: $baseFontSize - 1px;
+   }
+
+   @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+ }
+
+ html, body {
   height: 100%;
   }
 
   body {
-    font-size: $baseFontSize;
     font-family: "Play", Helvetica, sans-serif;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;

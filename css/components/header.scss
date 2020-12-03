@@ -10,8 +10,8 @@
 }
 
 .menu__item {
-  margin-right: 27px;
-  font-size: 18px;
+  margin-right: rem(27px);
+  font-size: rem(18px);
   font-family: Alegreya Sans;
 
   &:last-child {
@@ -30,11 +30,11 @@
 }
 
 .phone-number__icon-elem {
-  width: 13px;
-  height: 13px;
-  margin-right: 6px;
+  width: rem(13px);
+  height: rem(13px);
+  margin-right: rem(6px);
 }
 
 .phone-number__text {
-  font-size: 18px;
+  font-size: rem(18px);
 }

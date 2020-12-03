@@ -10,7 +10,7 @@
   &:before {
     content: url(./../../img/Combinedshape.png);
     position: absolute;
-    top: 57px;
+    top: rem(57px);
     right: 0;
     transform: translateX(50%);
   }

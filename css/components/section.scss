@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 774px;
+  min-height: rem(774px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,19 +10,19 @@
 
     .section__title {
       color: inherit;
-      margin-bottom: 49px;
+      margin-bottom: rem(49px);
     }
   }
 }
 
 .section__title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: rem(48px);
   text-align: center;
   color: #292929;
   text-transform: uppercase;
 
   &--reviews {
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
   }
 }

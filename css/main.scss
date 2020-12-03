@@ -1,10 +1,15 @@
-@import "./media.css";
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "./media.scss";
 
 //normalize
 @import "./normalize.css";
-
-$containerWidth: 940px;
-$baseFontSize: 16px;
 
 //colors
 $black: #292929;

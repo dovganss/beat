@@ -1,9 +1,9 @@
 .btn {
-  font-size: 16px;
+  font-size: rem($baseFontSize);
   font-weight: bold;
   padding: rem(18px) rem(41px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   border: none;
@@ -23,7 +23,7 @@
     color: white;
     text-transform: none;
     font-weight: normal;
-    padding: 18px 7px;
+    padding: rem(18px) rem(7px);
 
     &:hover {
       color: #E01F3D;

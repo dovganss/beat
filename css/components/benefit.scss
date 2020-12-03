@@ -4,34 +4,34 @@
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 13px;
+  margin-bottom: rem(13px);
 }
 
 .benefit__icon {
-  width: 66px;
-  height: 66px;
+  width: rem(66px);
+  height: rem(66px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   &--battery {
-    width: 35px;
+    width: rem(35px);
   }
 }
 
 .benefit__title {
   font-weight: bold;
   color: #292929;
-  font-size: 24px;
+  font-size: rem(24px);
 }
 
 .benefit__desc {
-  line-height: 19px;
+  line-height: rem(19px);
 }
