@@ -8,3 +8,13 @@
     left: 5%;
   }
 }
+
+.benefits-section {
+  @include tablets {
+    height: 140vh;
+  }
+
+  @include phones {
+    min-height: 100vh;
+  }
+}

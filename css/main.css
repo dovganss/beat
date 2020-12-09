@@ -1,7 +1,88 @@
 @import "./normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
-@import "./layout.css";
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Play", Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  color: #666666;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
@@ -16,6 +97,12 @@
   right: 18%;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 135vh;
+  }
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -24,39 +111,97 @@
   padding: 1.5rem 1.5625rem 4.0625rem 0;
   background: url("../../img/Ellipse 5.png") right top 66%/50% auto no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
+}
 
 .hero__title-section {
   max-width: 42%;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__title-section:before {
+    content: "";
+    width: 21.875rem;
+    height: 21.875rem;
+    margin-bottom: 5.3125rem;
+    background: url(./../../img/Ellipse.png) center center/contain no-repeat;
+  }
 }
 
 .hero__main-title {
   font-size: 3rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 1.375rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    width: 87%;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .hero__title-desc {
   font-size: 1.3125rem;
   font-family: Alegreya Sans;
-  margin-bottom: 3.3125rem;
+  margin-bottom: 3.4375rem;
   max-width: 21.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-desc {
+    margin-bottom: 1.5625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-desc {
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
 }
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+.menu {
+  margin: 0 30px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .menu__item {
   margin-right: 1.6875rem;
+  margin-bottom: 10px;
   font-size: 1.125rem;
   font-family: Alegreya Sans;
 }
@@ -66,12 +211,24 @@
 
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
 }
 
 .phone-number {
+  padding-top: 3px;
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+.phone-number__icon {
+  flex-shrink: 0;
 }
 
 .phone-number__icon-elem {
@@ -82,6 +239,7 @@
 
 .phone-number__text {
   font-size: 1.125rem;
+  white-space: nowrap;
 }
 
 .features {
@@ -146,6 +304,11 @@
   color: inherit;
   margin-bottom: 3.0625rem;
 }
+@media screen and (max-width: 768px) {
+  .section--font-color--white .section__title {
+    margin-bottom: 1.4375rem;
+  }
+}
 
 .section__title {
   font-weight: bold;
@@ -166,13 +329,35 @@
 .headline__title {
   margin-bottom: 0.4375rem;
 }
+@media screen and (max-width: 480px) {
+  .headline__title {
+    line-height: 36px;
+    font-size: 2.5rem;
+  }
+}
 
 .headline__subtitle {
   padding: 0 22%;
 }
+@media screen and (max-width: 768px) {
+  .headline__subtitle {
+    padding: 0 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0 13%;
+    margin-bottom: 5.3125rem;
+  }
+}
 
 .benefits {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -180,12 +365,23 @@
   padding: 0 3%;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+    margin-bottom: 3.1875rem;
+  }
+}
 .benefits__item:before {
   content: url(./../../img/Combinedshape.png);
   position: absolute;
   top: 3.5625rem;
   right: 0;
   transform: translateX(50%);
+}
+@media screen and (max-width: 480px) {
+  .benefits__item:before {
+    display: none;
+  }
 }
 .benefits__item:first-child {
   padding-left: 0;
@@ -197,8 +393,20 @@
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    padding: 0 0;
+  }
+}
+
 .benefit {
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__image-wrapper {
@@ -210,6 +418,12 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 0.8125rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper {
+    margin-bottom: 0;
+    margin-right: 0.75rem;
+  }
 }
 
 .benefit__icon {
@@ -229,9 +443,24 @@
   color: #292929;
   font-size: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .benefit__title {
+    margin-bottom: 0.9375rem;
+  }
+}
 
 .benefit__desc {
   line-height: 1.1875rem;
+}
+@media screen and (max-width: 768px) {
+  .benefit__desc {
+    line-height: 1.5625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefit__desc {
+    padding-right: 3.125rem;
+  }
 }
 
 .benefits-section {
@@ -244,12 +473,32 @@
   left: 5%;
 }
 
+@media screen and (max-width: 768px) {
+  .benefits-section {
+    height: 140vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefits-section {
+    min-height: 100vh;
+  }
+}
+
 .reviews-section:before {
   content: url(./../../img/Ellipsereviews.png);
 }
 
+@media screen and (max-width: 768px) {
+  .reviews-section {
+    height: 150vh;
+  }
+}
+
 .reviews__display {
   background: #F8FAF9;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.9375rem;
 }
 .reviews__display:before {
   content: "";
@@ -261,16 +510,38 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -4.0625rem;
+  top: -3.4375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__display {
+    margin-bottom: 2rem;
+  }
 }
 
 .reviews__display-inner {
   display: flex;
+  padding: 2.625rem 2.625rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 3.75rem 2.625rem 2.625rem 2.625rem;
+  }
 }
 
 .reviews__avatar {
   width: 15.8125rem;
   height: 16.5rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 8.125rem;
+    height: 8.125rem;
+    margin-bottom: 0.625rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -349,6 +620,7 @@
 .order-section {
   background: #181818;
   position: relative;
+  height: 140vh;
 }
 .order-section:before {
   content: url(./../../img/Polygon.png);
@@ -357,8 +629,25 @@
   right: 15%;
 }
 
+@media screen and (max-width: 480px) {
+  .order-section__title {
+    font-size: 2.375rem;
+  }
+}
+
 .form {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 19%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
 }
 
 .form__col {
@@ -367,6 +656,11 @@
 }
 .form__col:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
 }
 
 .form__row {
@@ -393,6 +687,12 @@
   resize: none;
   margin-bottom: 1.3125rem;
 }
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 5.625rem;
+    margin-bottom: 0.375rem;
+  }
+}
 .form__input:focus {
   border-color: #E01F3D;
   outline: none;
@@ -401,6 +701,22 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .form__controls {
+    justify-content: center;
+  }
+}
+
+.form__btns {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.5rem 0.625rem;
+  }
 }
 
 .radio {
@@ -455,6 +771,11 @@
   right: 3%;
   z-index: 100;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 0.3125rem;
@@ -484,4 +805,68 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hamburger {
+  width: 26px;
+  height: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #292929;
+  height: 4px;
+  border-radius: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5625rem 0;
+  background: #FFFFFF;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__place {
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #000000;
+}
+
+.phone-number {
+  font-size: 1rem;
+  font-style: normal;
+  color: #292929;
+  text-decoration: none;
+  font-weight: normal;
 }

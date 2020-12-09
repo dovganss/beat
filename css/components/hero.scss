@@ -13,6 +13,12 @@
   }
 }
 
+.hero {
+  @include tablets {
+    height: 135vh;
+  }
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -20,23 +26,64 @@
   height: 100%;
   padding: rem(24px) rem(25px) rem(65px) 0;
   background: url("../../img/Ellipse\ 5.png") right top 66% / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-section {
   max-width: 42%;
+
+  @include tablets {
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content: "";
+      width: rem(350px);
+      height: rem(350px);
+      margin-bottom: rem(85px);
+      background: url(./../../img/Ellipse.png) center center / contain no-repeat;
+    }
+  }
 }
 
 .hero__main-title {
-  font-size: rem($baseFontSize + 32px);
+  font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: rem(22px);
+  margin-bottom: rem(24px);
   text-transform: uppercase;
+
+  @include tablets {
+    width: 87%;
+    margin-bottom: rem(12px);
+  }
 }
 
 .hero__title-desc {
   font-size: rem(21px);
   font-family: Alegreya Sans;
-  margin-bottom: rem(53px);
+  margin-bottom: rem(55px);
   max-width: rem(351px);
+
+  @include tablets {
+  margin-bottom: rem(25px); 
+  }
+
+  @include phones {
+    padding: 0 3%;
+  }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
 }

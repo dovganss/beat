@@ -11,6 +11,10 @@
     .section__title {
       color: inherit;
       margin-bottom: rem(49px);
+
+      @include tablets {
+        margin-bottom: rem(23px);
+      }
     }
   }
 }

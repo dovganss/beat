@@ -1,6 +1,7 @@
 .order-section {
   background: #181818;
   position: relative;
+  height: 140vh;
 
   &:before {
     content: url(./../../img/Polygon.png);
@@ -9,3 +10,10 @@
     right: 15%;
   }
 }
+
+.order-section__title {
+  @include phones {
+    font-size: rem(38px);
+  }
+}
+
