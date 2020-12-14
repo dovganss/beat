@@ -870,3 +870,47 @@ img {
   text-decoration: none;
   font-weight: normal;
 }
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.fb-icon {
+  fill: #B3B3B3;
+}
+.fb-icon :hover {
+  fill: #000000;
+}
+
+.vk-icon {
+  fill: #B3B3B3;
+}
+.vk-icon :hover {
+  fill: #000000;
+}
+
+.inst-icon {
+  fill: #B3B3B3;
+}
+.inst-icon :hover {
+  fill: #000000;
+}
+
+.tel-icon {
+  fill: #B3B3B3;
+}
+.tel-icon :hover {
+  fill: #000000;
+}
