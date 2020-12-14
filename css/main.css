@@ -849,6 +849,12 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+  .footer__phone-number {
+    margin-bottom: 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 10px;
     display: flex;
@@ -861,6 +867,11 @@ img {
   font-style: normal;
   font-size: 1.125rem;
   color: #000000;
+}
+@media screen and (max-width: 480px) {
+  .contacts__place {
+    margin-bottom: 10px;
+  }
 }
 
 .phone-number {
@@ -887,30 +898,29 @@ img {
   margin-right: 0;
 }
 
-.fb-icon {
+.socials__icon {
+  max-width: 100%;
+  max-height: 100%;
   fill: #B3B3B3;
 }
-.fb-icon :hover {
+
+.socials__item--icon--fb:hover .fb-icon {
   fill: #000000;
 }
 
-.vk-icon {
-  fill: #B3B3B3;
-}
-.vk-icon :hover {
+.socials__item--icon--vk:hover .vk-icon {
   fill: #000000;
 }
 
-.inst-icon {
-  fill: #B3B3B3;
-}
-.inst-icon :hover {
+.socials__item--icon--instagram:hover .inst-icon {
   fill: #000000;
 }
 
-.tel-icon {
-  fill: #B3B3B3;
-}
-.tel-icon :hover {
+.socials__item--icon--telegram:hover .tel-icon {
   fill: #000000;
+}
+
+.map__img {
+  width: 100%;
+  height: 100%;
 }

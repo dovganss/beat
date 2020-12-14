@@ -15,35 +15,33 @@
   }
 }
 
-.fb-icon {
+.socials__icon {
+  max-width: 100%;
+  max-height: 100%;
   fill: #B3B3B3;
+}
 
-  :hover {
+.socials__item--icon--fb:hover {
+  .fb-icon {
     fill: #000000;
   }
 }
 
-
-.vk-icon {
-  fill: #B3B3B3;
-
-  :hover {
+.socials__item--icon--vk:hover {
+  .vk-icon {
     fill: #000000;
   }
 }
 
-.inst-icon {
-  fill: #B3B3B3;
-
-  :hover {
+.socials__item--icon--instagram:hover {
+  .inst-icon {
     fill: #000000;
   }
 }
 
-.tel-icon {
-  fill: #B3B3B3;
-
-  :hover {
+.socials__item--icon--telegram:hover {
+  .tel-icon {
     fill: #000000;
   }
 }
+
