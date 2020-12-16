@@ -141,6 +141,59 @@
               </ul>
             </div>
           </section>
+          <section class="section slider-section">
+           <div class="container slider-container">
+             <div class="arrow">
+              <a href="" class="arrow__link" id="left">
+                <img src="./img/leftarrow.png" alt="left arrow" class="arrow__img">
+              </a>
+             </div>
+             <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <div class="slider__col">
+                    <img src="./img/sliderimg.png" alt="headphones" class="slider__img">
+                  </div>
+                  <div class="slider__col">
+                    <div class="slider__structure">
+                      <div class="slider__wrapper-icon">
+                        <img src="./img/structureimg.png" alt="" class="slider__icon">
+                      </div>
+                    </div>
+                    <div class="slider__title">
+                      <h3 class="slider__title-text">beats solo 3. цвет 
+                        «атласное серебро»</h3>
+                    </div>
+                    <div class="slider__content">
+                      <div class="slider__desc">
+                        <p class="slider__desc-text">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                      </div>
+                      <div class="slider__parameters">
+                        <div class="slider__parameters-battery">
+                          <div class="slider__parameters-battery-name">Зарядка</div>
+                          <div class="slider__parameters-battery-text">2  часа</div>
+                        </div>
+                        <div class="slider__parameters-weight">
+                          <div class="slider__parameters-weight-name">Вес</div>
+                          <div class="slider__parameters-weight-text">215 грамм</div>
+                        </div>
+                      </div>
+                      <div class="slider__order">
+                        <div class="slider__order-price">14 990 ₽</div>
+                        <button class="btn btn--theme--red">ЗАКАЗАТЬ</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             </div>
+             <div class="arrow">
+              <a href="" class="arrow__link" id="right">
+                <img src="./img/rightarrow.png" alt="right arrow" class="arrow__img">
+              </a>
+             </div>
+           </div>
+          </section>
        <section class="section reviews-section">
          <div class="container">
           <h2 class="section__title section__title--reviews">отзывы</h2>
@@ -186,36 +239,36 @@
               <div class="form__col">
                 <div class="form__row">
                   <label class="form__block">
-                    <div class="form__title">Имя</div>
-                    <input type="text" class="form__input">
+                    <div class="form__title">Имя <span class="form__title--error">!!!!!</span></div>
+                    <input type="text" class="form__input" name="name">
                   </label>
                   <label class="form__block">
-                    <div class="form__title">Телефон</div>
-                    <input type="text" class="form__input">
+                    <div class="form__title">Телефон <span class="form__title--error">!!!!!</span></div>
+                    <input type="text" class="form__input" name="phone">
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Улица</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="street">
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
-                    <div class="form__title">Дом</div>
-                    <input type="text" class="form__input">
+                    <div class="form__title">Дом <span class="form__title--error">!!!!!</span></div>
+                    <input type="text" class="form__input" name="house">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Корпус</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="corp">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Квартира</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="flat">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Этаж</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="to">
                   </label>
                 </div>
               </div>
@@ -223,7 +276,7 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Комментарий</div>
-                    <textarea class="form__input form__input--textarea"></textarea>
+                    <textarea class="form__input form__input--textarea" name="comment"></textarea>
                   </label>
                 </div>
                 <div class="form__controls">
@@ -323,5 +376,7 @@
         <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

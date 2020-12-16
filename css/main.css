@@ -719,6 +719,16 @@ img {
   }
 }
 
+.form__title--error {
+  color: red;
+  display: none;
+}
+
+.field_error {
+  display: block;
+  border: 2px solid red;
+}
+
 .radio {
   display: flex;
   cursor: pointer;

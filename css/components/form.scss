@@ -80,3 +80,13 @@
     padding: rem(8px) rem(10px);
   }
 }
+
+.form__title--error {
+  color: red;
+  display: none;
+}
+
+.field_error {
+  display: block;
+  border: 2px solid red;
+}

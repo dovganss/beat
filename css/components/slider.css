@@ -1,0 +1,30 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__img {
+  width: rem(452px);
+  height: rem(452px);
+}
+
+.slider__wrapper-icon {
+  background: #9A9A9A;
+  width: rem(91px);
+  height: rem(91px);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.slider__icon {
+  display: block;
+  position: relative;
+}
