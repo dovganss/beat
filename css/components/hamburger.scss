@@ -11,9 +11,35 @@
   }
 }
 
+.hamburger.hamburger--active {
+  opacity: 0.7; 
+}
+
+.hamburger.hamburger--active .hamburger__plank--top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+  -ms-transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  border-radius: 5px; 
+}
+
+.hamburger.hamburger--active .hamburger__plank--middle {
+  opacity: 0; 
+}
+
+.hamburger.hamburger--active .hamburger__plank--bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      border-radius: 5px;
+}
+
+
 .hamburger__plank {
   display: block;
   background: #292929;
   height: 4px;
   border-radius: 10px;
 }
+
+
+
