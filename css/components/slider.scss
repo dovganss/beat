@@ -3,7 +3,16 @@
   flex-direction: column;
 }
 
+.slider__list {
+  display: flex;
+}
+
 .slider__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__col {
   display: flex;
   flex-direction: column;
 }
@@ -25,6 +34,18 @@
 }
 
 .slider__icon {
-  display: block;
   position: relative;
+}
+
+.slider__title {
+  font-weight: bold;
+  font-size: rem(36px);
+  text-transform: uppercase;
+  color: #292929;
+  max-width: rem(419px);
+  line-height: 42px;
+}
+
+.slider__desc {
+  max-width: rem(368px);
 }
