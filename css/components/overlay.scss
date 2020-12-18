@@ -31,23 +31,26 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  display: inline-block; }
+  display: inline-block; 
+  margin-top: -91%;
+}
 
 .overlay-menu__item {
   display: block;
   position: relative;
   line-height: 1;
-  opacity: 0; }
-  .overlay-menu__item:after {
-    display: inline-block;
-    vertical-align: middle;
-    content: ' ';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #fff; }
-  .overlay-menu__item:last-child:after {
-    display: none; }
+}
+
+.overlay-menu__item:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: ' ';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff; }
+.overlay-menu__item:last-child:after {
+  display: none; }
 
 .overlay-menu__link {
   display: block;

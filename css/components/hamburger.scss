@@ -13,6 +13,8 @@
 
 .hamburger.hamburger--active {
   opacity: 0.7; 
+  margin-left: 87%;
+  margin-top: 4%;
 }
 
 .hamburger.hamburger--active .hamburger__plank--top {
@@ -20,6 +22,7 @@
   -ms-transform: translateY(11px) translateX(0) rotate(45deg);
   transform: translateY(11px) translateX(0) rotate(45deg);
   border-radius: 5px; 
+  background: white;
 }
 
 .hamburger.hamburger--active .hamburger__plank--middle {
@@ -29,8 +32,9 @@
 .hamburger.hamburger--active .hamburger__plank--bottom {
   -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
       -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      transform: translateY(-6px) translateX(0) rotate(-45deg);
       border-radius: 5px;
+      background: white;
 }
 
 

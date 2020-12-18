@@ -833,11 +833,14 @@ img {
 
 .hamburger.hamburger--active {
   opacity: 0.7;
+  margin-left: 87%;
+  margin-top: 4%;
 }
 
 .hamburger.hamburger--active .hamburger__plank--top {
   transform: translateY(11px) translateX(0) rotate(45deg);
   border-radius: 5px;
+  background: white;
 }
 
 .hamburger.hamburger--active .hamburger__plank--middle {
@@ -845,8 +848,9 @@ img {
 }
 
 .hamburger.hamburger--active .hamburger__plank--bottom {
-  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-6px) translateX(0) rotate(-45deg);
   border-radius: 5px;
+  background: white;
 }
 
 .hamburger__plank {
@@ -979,6 +983,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   width: 0.875rem;
+  z-index: 1;
 }
 .arrow_left {
   left: -3.75rem;
@@ -1242,13 +1247,13 @@ img {
   padding: 0;
   margin: 0 auto;
   display: inline-block;
+  margin-top: -91%;
 }
 
 .overlay-menu__item {
   display: block;
   position: relative;
   line-height: 1;
-  opacity: 0;
 }
 
 .overlay-menu__item:after {

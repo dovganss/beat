@@ -25,6 +25,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: rem(14px);
+  z-index: 1;
 
   &_left {
     left: rem(-60px);

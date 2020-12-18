@@ -79,11 +79,12 @@ let button = document.querySelector("#toggle");
 let menu = document.querySelector("#overlay");
 let body = document.querySelector('body');
 
-let toggleMenu = function () {
+let toggleMenu = function (e) {
+  e.preventDefault ();
   button.classList.toggle('hamburger--active');
   menu.classList.toggle('overlay--open');
   body.classList.toggle('body-active-menu');
-}
+};
 
 button.addEventListener('click', toggleMenu);
 
