@@ -88,3 +88,15 @@ let toggleMenu = function (e) {
 
 button.addEventListener('click', toggleMenu);
 
+
+let closeMenu = document.querySelector(".hamburger--active");
+
+
+closeMenu.addEventListener('click', (e) => {
+   e.preventDefault ();
+   button.classList.remove ('hamburger--active');
+   menu.classList.remove ('overlay--open');
+   body.classList.remove ('body-active-menu');
+});
+
+
