@@ -1,0 +1,19 @@
+.team.team--version--mobile {
+    display: none;
+  }
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-title {
+  margin-bottom: rem(53px);
+}
+
+.team__member {
+  min-width: rem(220px);
+  min-height: rem(290px);
+}
+
+

@@ -100,3 +100,37 @@ closeMenu.addEventListener('click', (e) => {
 });
 
 
+///////reviews
+
+const findBlockByAlias = (alias) => {
+  return $(".reviews__item").filter((ndx, item) => {
+    return $(item).attr("data-linked-with") === alias;
+  });
+};
+
+const findContentByAlias = (alias) => {
+  return $(".reviews__content-item").filter((ndx, item) => {
+    return $(item).attr("data-content") === alias;
+  });
+};
+
+
+$(".interactive-avatar__link").click((e) => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const target = $this.attr("data-open");
+  const itemToShow = findBlockByAlias(target);
+  const contentToShow = findContentByAlias(target);
+  const curItem = $this.closest(".reviews__switcher-item");
+
+
+  itemToShow.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
+  curItem.addClass("interactive-avatar--active").siblings().removeClass("interactive-avatar--active");
+  contentToShow.addClass("reviews__content-item--active").siblings().removeClass("reviews__content-item--active");
+
+});
+
+
+
+
