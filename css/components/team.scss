@@ -94,7 +94,13 @@
   overflow: hidden;
   transition: height .3s;
   height: 0;
+
+  @include tablets {
+    position: static;
+  }
 }
+
+
 
 
 

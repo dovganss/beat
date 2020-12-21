@@ -1416,3 +1416,8 @@ img {
   transition: height 0.3s;
   height: 0;
 }
+@media screen and (max-width: 768px) {
+  .team__content {
+    position: static;
+  }
+}

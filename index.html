@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BEATS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -576,7 +577,6 @@
                 <input type="submit" value="ЗАКАЗАТЬ" class="btn btn--theme--red">
                 <input type="reset" value="Очистить" class="btn btn--theme--transparent">
               </div>
-
             </div>
           </form>
         </div>
@@ -637,6 +637,10 @@
 
     </div>
   </div>
+<div id="modal" class="modal">
+  <div class="modal__container"></div>
+</div>
+
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
@@ -684,7 +688,9 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
