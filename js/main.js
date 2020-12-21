@@ -139,6 +139,9 @@ const openItem = item => {
   const textBlock = contentBlock.find(".team__content-block");
   const reqHeight = textBlock.height();
 
+
+
+
   container.addClass("active");
   contentBlock.height(reqHeight);
 }
@@ -146,22 +149,28 @@ const openItem = item => {
 const closeEveryItem = container => {
   const items = container.find(".team__content");
   const itemContainer = container.find(".team__item");
+  const closeTriangle = container.find(".triangle");
 
   itemContainer.removeClass("active");
   items.height(0);
+  closeTriangle.removeClass("triangle--active");
 }
 
 $('.team__title').click(e => {
   const $this = $(e.currentTarget);
   const container = $this.closest(".team");
   const elemContainer = $this.closest(".team__item");
+  const triangle = $this.children(".triangle");
 
   if (elemContainer.hasClass("active")) {
     closeEveryItem(container);
+    triangle.removeClass("triangle--active");
   } else {
     closeEveryItem(container);
     openItem($this);
+    triangle.addClass("triangle--active");
   }
+
 
 
 

@@ -1,19 +1,34 @@
 .team.team--version--mobile {
     display: none;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
 .team--version--desktop {
   display: flex;
   justify-content: space-between;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .team__item {
   margin-right: rem(20px);
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablets {
+    position: relative;
   }
 }
 
@@ -38,37 +53,24 @@
   max-width: rem(200px);
   cursor: pointer;
   outline: none;
-
-  &:before {
-    content: "";
-    border: 4px solid transparent;
-    width: 0px;
-    height: 0px;
-    border-top-color: #E01F3D;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-top-width: 12px;
-    position: absolute;
-    left: 94%;
-    border-left-width: 12px;
-    transform: rotate(135deg);
-    }
-
-    &:after {
-      border: 4px solid transparent;
-      width: 0px;
-      height: 0px;
-      border-top-color: #E01F3D;
-      border-right-width: 0px;
-      border-bottom-width: 0px;
-      border-top-width: 12px;
-      position: absolute;
-      left: 94%;
-      border-left-width: 12px;
-      transform: rotate(315deg);
-      top: 47%;
-      }
 }
+
+.triangle {
+  border: 4px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-top-color: #E01F3D;
+  border-top-width: 8px;
+  position: absolute;
+  border-left-width: 6px;
+  top: 38%;
+  left: 97%;
+
+  &--active {
+    transform: rotate(64deg);
+  }
+}
+  
 
 .team__content-block {
   display: flex;
@@ -93,6 +95,7 @@
   transition: height .3s;
   height: 0;
 }
+
 
 
 
