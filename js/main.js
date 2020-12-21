@@ -139,9 +139,6 @@ const openItem = item => {
   const textBlock = contentBlock.find(".team__content-block");
   const reqHeight = textBlock.height();
 
-
-
-
   container.addClass("active");
   contentBlock.height(reqHeight);
 }
