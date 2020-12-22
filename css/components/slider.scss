@@ -159,10 +159,12 @@
   max-width: rem(430px);
   line-height: 1.1;
   margin-bottom: rem(24px);
+ 
 
   @include tablets {
     max-width: 100%;
     font-size: rem(28px);
+    text-align: center;
   }
 
   @include phones {

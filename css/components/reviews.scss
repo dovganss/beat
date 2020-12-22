@@ -34,6 +34,11 @@
 .reviews__display {
   @include tablets {
     margin-bottom: rem(32px);
+    min-height: rem(500px);
+  }
+
+  @include phones {
+    min-height: rem(600px);
   }
 }
 
@@ -49,7 +54,7 @@
   }
 
   @include phones {
-    padding-bottom: rem(100px);
+    padding-bottom: rem(150px);
   }
 }
 
@@ -123,6 +128,10 @@
 
 .reviews__text {
   margin-bottom: rem(38px);
+
+  @include tablets {
+    margin-bottom: rem(15px);
+  }
 }
 
 .reviews__author {

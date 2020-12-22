@@ -1,36 +1,6 @@
 //////form
 
-const form = document.querySelector(".form");
 
-const validate = (fields) => {
-  let valid = true
-  fields.forEach((f) => {
-    f.classList.remove("field_error");
-    if (f.value.trim() == "") {
-      f.classList.add("field_error");
-      valid = false
-    }
- });
-
- return valid
-};
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault ();
-  const name = form.elements.name;
-  const phone = form.elements.phone;
-  const house = form.elements.house;
-
-  const fields = [name, phone, house];
-
-  const isValid = validate(fields);
-
-  if (isValid) {
-    console.log("валидация пройдена")
-  } else {
-    console.log("валидация не пройдена");
-  }
-});
 
 
 ////////slider
@@ -135,21 +105,15 @@ $(".interactive-avatar__link").click((e) => {
 
 const openItem = item => {
   const container = item.closest(".team__item");
-  const contentBlock = container.find(".team__content");
-  const textBlock = contentBlock.find(".team__content-block");
-  const reqHeight = textBlock.height();
+  container.addClass("team__item--active");
 
-  container.addClass("active");
-  contentBlock.height(reqHeight);
 }
 
 const closeEveryItem = container => {
-  const items = container.find(".team__content");
   const itemContainer = container.find(".team__item");
   const closeTriangle = container.find(".triangle");
 
-  itemContainer.removeClass("active");
-  items.height(0);
+  itemContainer.removeClass("team__item--active");
   closeTriangle.removeClass("triangle--active");
 }
 
@@ -159,9 +123,11 @@ $('.team__title').click(e => {
   const elemContainer = $this.closest(".team__item");
   const triangle = $this.children(".triangle");
 
-  if (elemContainer.hasClass("active")) {
+ 
+  if (elemContainer.hasClass("team__item--active")) {
     closeEveryItem(container);
     triangle.removeClass("triangle--active");
+
   } else {
     closeEveryItem(container);
     openItem($this);

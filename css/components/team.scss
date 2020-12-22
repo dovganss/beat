@@ -11,6 +11,7 @@
 .team--version--desktop {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @include tablets {
     display: none;
@@ -18,11 +19,12 @@
 }
 
 .team__item {
-  margin-right: rem(20px);
+  margin-right: rem(10px);
   display: flex;
   flex-direction: column;
   position: relative;
 
+  
   &:last-child {
     margin-right: 0;
   }
@@ -31,6 +33,14 @@
     position: relative;
   }
 }
+
+.team__item--active {
+  .team__content {
+    height: initial;
+    transition: height .3s;
+  }
+ }
+
 
 .section__title--team {
   margin-bottom: rem(53px);
@@ -78,6 +88,9 @@
   align-items: center;
   max-width: rem(222px);
   height: 70px;
+  transition: height .3s;
+
+
 
   @include tablets {
     height: 380px;
@@ -97,8 +110,7 @@
   top: 100%;
   overflow: hidden;
   transition: height .3s;
-  height: 0;
-
+  height: 0px;
 }
 
 

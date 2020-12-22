@@ -1,0 +1,24 @@
+.modal {
+  display: none;
+}
+
+.modal__container {
+  background: white;
+  min-width: rem(309px);
+  min-height: rem(100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: rem(36px);
+}
+
+.modal-error {
+  .modal__content {
+    color: red;
+  }
+}

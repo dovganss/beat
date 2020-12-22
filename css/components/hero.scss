@@ -62,7 +62,7 @@
   text-transform: uppercase;
 
   @include tablets {
-    width: 87%;
+    width: 100%;
     margin-bottom: rem(12px);
   }
 }

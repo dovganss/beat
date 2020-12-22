@@ -148,7 +148,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero__main-title {
-    width: 87%;
+    width: 100%;
     margin-bottom: 0.75rem;
   }
 }
@@ -516,6 +516,12 @@ img {
 @media screen and (max-width: 768px) {
   .reviews__display {
     margin-bottom: 2rem;
+    min-height: 31.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__display {
+    min-height: 37.5rem;
   }
 }
 
@@ -533,7 +539,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .reviews__display-inner {
-    padding-bottom: 6.25rem;
+    padding-bottom: 9.375rem;
   }
 }
 
@@ -602,6 +608,11 @@ img {
 
 .reviews__text {
   margin-bottom: 2.375rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    margin-bottom: 0.9375rem;
+  }
 }
 
 .reviews__author {
@@ -1160,6 +1171,7 @@ img {
   .slider__title {
     max-width: 100%;
     font-size: 1.75rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1333,6 +1345,7 @@ img {
 .team--version--desktop {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .team--version--desktop {
@@ -1341,7 +1354,7 @@ img {
 }
 
 .team__item {
-  margin-right: 1.25rem;
+  margin-right: 0.625rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1353,6 +1366,11 @@ img {
   .team__item {
     position: relative;
   }
+}
+
+.team__item--active .team__content {
+  height: initial;
+  transition: height 0.3s;
 }
 
 .section__title--team {
@@ -1399,6 +1417,7 @@ img {
   align-items: center;
   max-width: 13.875rem;
   height: 70px;
+  transition: height 0.3s;
 }
 @media screen and (max-width: 768px) {
   .team__content-block {
@@ -1419,5 +1438,28 @@ img {
   top: 100%;
   overflow: hidden;
   transition: height 0.3s;
-  height: 0;
+  height: 0px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal__container {
+  background: white;
+  min-width: 19.3125rem;
+  min-height: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 2.25rem;
+}
+
+.modal-error .modal__content {
+  color: red;
 }
