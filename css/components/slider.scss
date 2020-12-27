@@ -28,7 +28,7 @@
   z-index: 1;
 
   &_left {
-    left: rem(-60px);
+    left: rem(-30px);
 
     @include tablets {
       left: rem(65px);

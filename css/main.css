@@ -37,6 +37,8 @@ body {
 
 .maincontent {
   height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -296,7 +298,6 @@ img {
 
 .section {
   height: 100vh;
-  min-height: 48.375rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -672,7 +673,7 @@ img {
 .order-section {
   background: #181818;
   position: relative;
-  height: 140vh;
+  height: 100vh;
 }
 .order-section:before {
   content: url(./../../img/Polygon.png);
@@ -912,12 +913,6 @@ img {
   border-radius: 10px;
 }
 
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .footer {
   padding: 1.5625rem 0;
   background: #FFFFFF;
@@ -1039,7 +1034,7 @@ img {
   z-index: 1;
 }
 .arrow_left {
-  left: -3.75rem;
+  left: -1.875rem;
 }
 @media screen and (max-width: 768px) {
   .arrow_left {
@@ -1648,7 +1643,7 @@ img {
   font-weight: bold;
   font-size: 36px;
   white-space: nowrap;
-  margin-top: 598px;
+  margin-top: 501px;
 }
 
 .products-menu__close {
