@@ -1,8 +1,10 @@
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: rem(25px) 0;
   background: #FFFFFF;;
 }
