@@ -91,7 +91,7 @@ img {
 
 .hero {
   background-color: #F5F5F5;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   color: #292929;
   position: relative;
@@ -297,7 +297,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -671,7 +671,7 @@ img {
 }
 
 .order-section {
-  background: #181818;
+  background: url(./../img/backforma.png) center center/cover no-repeat;
   position: relative;
   height: 100vh;
 }
@@ -847,6 +847,12 @@ img {
   border-color: #E01F3D;
 }
 .fixed-menu__item--active .fixed-menu__link:before {
+  background: #E01F3D;
+}
+.fixed-menu__item:hover .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__item:hover .fixed-menu__link:before {
   background: #E01F3D;
 }
 

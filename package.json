@@ -1,17 +1,18 @@
 {
   "name": "beats",
   "version": "1.0.0",
-  "description": "",
+  "description": "How to install and build my app\r 1. git clone https://dovganss.github.io/beat/\r 2. cd beats\r 3. npm i",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "jquery-touchswipe": "^1.6.19"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "webpack": "^5.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp" : "gulp"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/dovganss/beat/issues"
   },
-  "homepage": "https://github.com/dovganss/beat#readme"
+  "homepage": "https://github.com/dovganss/beat#readme",
+  "keywords": []
 }
