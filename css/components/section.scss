@@ -28,4 +28,8 @@
   &--reviews {
     margin-bottom: rem(22px);
   }
+
+  @include phones {
+    font-size: rem(32px);
+  }
 }

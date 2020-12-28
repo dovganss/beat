@@ -40,6 +40,16 @@
   width: rem(662px);
   position: relative;
   margin: 0 auto;
+
+  @include tablets {
+    height: rem(351px);
+    width: rem(594px);
+  }
+
+  @include phones {
+    height: rem(233px);
+    width: rem(394px);
+  }
 }
 
 .player__elem {
@@ -48,6 +58,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  @include tablets {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 

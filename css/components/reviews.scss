@@ -4,11 +4,6 @@
   }
 }
 
-.reviews-section {
-  @include tablets {
-    height: 150vh;
-  }
-}
 
 .reviews__display {
   background: #F8FAF9;
@@ -36,10 +31,6 @@
     margin-bottom: rem(32px);
     min-height: rem(500px);
   }
-
-  @include phones {
-    min-height: rem(600px);
-  }
 }
 
 .reviews__display-inner {
@@ -54,7 +45,7 @@
   }
 
   @include phones {
-    padding-bottom: rem(150px);
+    padding-bottom: rem(50px);
   }
 }
 

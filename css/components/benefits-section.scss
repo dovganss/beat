@@ -7,14 +7,9 @@
     bottom: rem(-20px);
     left: 5%;
   }
-}
-
-.benefits-section {
-  @include tablets {
-    height: 140vh;
-  }
 
   @include phones {
-    min-height: 100vh;
+    padding-top: rem(30px);
   }
 }
+

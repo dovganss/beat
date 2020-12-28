@@ -17,6 +17,10 @@
   @include tablets {
     left: 69px;
   }
+
+  @include phones {
+    left: 21px;
+  }
 }
 
 

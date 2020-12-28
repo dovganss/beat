@@ -13,12 +13,6 @@
   }
 }
 
-.hero {
-  @include tablets {
-    height: 135vh;
-  }
-}
-
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -29,6 +23,7 @@
 
   @include tablets {
     background: none;
+    padding: 25px 0 0 0;
   }
 }
 
@@ -52,6 +47,16 @@
       background: url(./../img/heroimg.png) center center / contain no-repeat;
     }
   }
+
+  @include phones {
+    &:before {
+      content: "";
+      width: rem(323px);
+      height: rem(323px);
+      margin-bottom: rem(49px);
+      background: url(./../img/heroimg.png) center center / contain no-repeat;
+    }
+  }
 }
 
 .hero__main-title {
@@ -64,6 +69,11 @@
   @include tablets {
     width: 100%;
     margin-bottom: rem(12px);
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    max-width: rem(371px);
   }
 }
 
@@ -79,6 +89,7 @@
 
   @include phones {
     padding: 0 3%;
+    font-size: rem(18px);
   }
 }
 
