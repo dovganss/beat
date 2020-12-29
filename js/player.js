@@ -1,5 +1,7 @@
 let player;
   const playerContainer = $('.player');
+  const playerVolume = document.querySelector(".player__volume");
+  const playerVolumeBtn = document.querySelector(".player__volume-btn");
 
 
 
@@ -80,6 +82,16 @@ let player;
           }
       });
 
+
+
+  playerVolume.addEventListener("click", (e) => {
+    const bar = $(e.currentTarget);
+    const newButtonPosition = e.pageX - bar.offset().left;
+    const buttonPosPercent = (newButtonPosition / bar.width()) * 100;
+    const newPlayerVolume =  buttonPosPercent;
+    playerVolumeBtn.style.left = `${buttonPosPercent}%`;
+    player.setVolume(newPlayerVolume);
+});
     
   
   const onPlayerStateChange = event => {

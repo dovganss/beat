@@ -71,7 +71,13 @@
      body.classList.remove ('body-active-menu');
   });
 
-
+$(".overlay-menu__item").click(e => {
+  e.preventDefault();
+  $(".overlay-menu").removeClass('overlay--open')
+  button.classList.remove ('hamburger--active');
+  menu.classList.remove ('overlay--open');
+  body.classList.remove ('body-active-menu');
+})
 
 })()
 

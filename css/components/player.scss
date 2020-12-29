@@ -100,7 +100,7 @@
   border: rem(9px) solid transparent;
   border-left-color: #FFFFFF;
   background-color: transparent;
-  margin: 0; 
+  margin: 0 20px 0 0;
   padding: 0; 
   outline: none;
   border-right-width: 0;
@@ -127,6 +127,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .player__splash-elem {
@@ -185,7 +187,7 @@
 }
 
 .player__volume-btn {
-  left: 0;
+  left: 100%;
   position: absolute;
   width: rem(14px);
   height: rem(14px);
