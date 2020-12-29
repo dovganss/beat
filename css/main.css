@@ -1602,6 +1602,64 @@ img {
   cursor: pointer;
 }
 
+.player__duration {
+  display: flex;
+  align-items: center;
+}
+
+.player__mute {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.player__mute--none {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.player__mute--none:before {
+  content: "";
+  width: 19px;
+  height: 3px;
+  border-top: 2px #ccc;
+  position: absolute;
+  left: 4px;
+  background: white;
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.player__mute-img {
+  width: 12px;
+}
+
+.player__volume {
+  background: #333333;
+  width: 3.875rem;
+  height: 0.25rem;
+  border-radius: 13%;
+  position: relative;
+}
+
+.player__volume-btn {
+  left: 0;
+  position: absolute;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background: #E01F3D;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 .products-menu-section {
   position: relative;
   background: url(./../img/products-menu.png) center center/cover no-repeat;

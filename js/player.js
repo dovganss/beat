@@ -1,6 +1,8 @@
-;(function() {
-  let player;
+let player;
   const playerContainer = $('.player');
+
+
+
   
   let eventsInit = () => {
     $(".player__start").click(e => {
@@ -65,6 +67,20 @@
       $(".player__duration-completed").text(formatTime(completedSec));
     }, 1000);
   };
+
+  $('.player__mute').click(e => {
+
+    if(player.isMuted()){
+              player.unMute();
+              $('.player__mute').removeClass("player__mute--none");
+          }
+          else{
+              player.mute();
+              $('.player__mute').addClass("player__mute--none");
+          }
+      });
+
+    
   
   const onPlayerStateChange = event => {
     /*
@@ -109,4 +125,3 @@
   }
   
   eventsInit();
-})()

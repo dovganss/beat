@@ -31,6 +31,9 @@
   }
 }
 
+
+
+
 .player-title {
   margin-bottom: rem(44px);
 }
@@ -131,4 +134,66 @@
   top: 36%;
   right: 50%;
   cursor: pointer;
+}
+
+.player__duration {
+  display: flex;
+  align-items: center;
+}
+
+
+.player__mute {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-right: rem(24px);
+  cursor: pointer;
+
+  &--none {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-right: rem(24px);
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 19px;
+      height: 3px;
+      border-top: 2px #ccc;
+      position: absolute;
+      left: 4px;
+      background: white;
+      transform: rotate(45deg);
+      top: 6px;
+    }
+  }
+}
+
+.player__mute-img {
+  width: 12px;
+}
+
+
+.player__volume {
+  background: #333333;
+  width: rem(62px);
+  height: rem(4px);
+  border-radius: 13%;
+  position: relative;
+}
+
+.player__volume-btn {
+  left: 0;
+  position: absolute;
+  width: rem(14px);
+  height: rem(14px);
+  border-radius: 50%;
+  background: #E01F3D;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
