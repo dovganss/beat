@@ -98,7 +98,7 @@ task('styles', ()=> {
 
 task('watch', () => {
   watch('./css/**/*', series('styles'));
-  watch('./css/*.html', series('copy:html'));
+  watch('*.html', series('copy:html'));
   watch('./js/*.js', series('scripts'));
   watch('./img/*.svg', series('icons'));
 })
