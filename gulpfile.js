@@ -31,6 +31,7 @@ task("copy:html", () => {
         .pipe(dest(DIST_PATH))
         .pipe(reload({ stream: true }));
 });
+
 task("copy:img", () => {
     return src(`${SRC_PATH}/img/**/*`)
         .pipe(dest(`${DIST_PATH}/img`))
@@ -129,5 +130,5 @@ task(
 
 task(
     "build",
-    series("clean", parallel("copy:html", "styles", "scripts", "icons"))
+    series("clean", parallel("copy:html", "copy:img", "styles", "scripts", "icons"))
 );
