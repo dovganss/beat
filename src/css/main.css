@@ -109,7 +109,7 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 1.5rem 1.5625rem 4.0625rem 0;
-  background: url("./../img/heroimg.png") right top 66%/50% auto no-repeat;
+  background: url("./img/heroimg.png") right top 66%/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -136,7 +136,7 @@ img {
     width: 21.875rem;
     height: 21.875rem;
     margin-bottom: 1.5625rem;
-    background: url(./../img/heroimg.png) center center/contain no-repeat;
+    background: url(./img/heroimg.png) center center/contain no-repeat;
   }
 }
 @media screen and (max-width: 480px) {
@@ -145,7 +145,7 @@ img {
     width: 20.1875rem;
     height: 20.1875rem;
     margin-bottom: 3.0625rem;
-    background: url(./../img/heroimg.png) center center/contain no-repeat;
+    background: url(./img/heroimg.png) center center/contain no-repeat;
   }
 }
 
@@ -1542,7 +1542,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(./../img/player.png) center center/cover no-repeat;
+  background: url(./img/player.png) center center/cover no-repeat;
   cursor: pointer;
   border: 1px solid;
 }
@@ -1664,12 +1664,12 @@ img {
 
 .products-menu-section {
   position: relative;
-  background: url(./../img/products-menu.png) center center/cover no-repeat;
+  background: url(./img/products-menu.png) center center/cover no-repeat;
   color: #FFFFFF;
 }
 @media screen and (max-width: 768px) {
   .products-menu-section {
-    background: url(./../img/products-menu.png) right center no-repeat;
+    background: url(./img/products-menu.png) right center no-repeat;
   }
 }
 

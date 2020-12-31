@@ -1,4 +1,4 @@
-
+;(function() {
   const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach(field => {
       field.removeClass("field_error");
@@ -65,7 +65,7 @@
   
     $.fancybox.close();
     $(".form").trigger("reset");
-  });
+  })
   
-
+})()
 

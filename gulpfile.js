@@ -31,7 +31,6 @@ task("copy:html", () => {
         .pipe(dest(DIST_PATH))
         .pipe(reload({ stream: true }));
 });
-
 task("copy:img", () => {
     return src(`${SRC_PATH}/img/**/*`)
         .pipe(dest(`${DIST_PATH}/img`))
