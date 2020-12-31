@@ -493,7 +493,7 @@ img {
   position: relative;
 }
 .benefits-section:before {
-  content: url(./../img/Vector2.png);
+  content: url(./img/Vector2.png);
   position: absolute;
   bottom: -1.25rem;
   left: 5%;
@@ -668,19 +668,19 @@ img {
   position: relative;
 }
 .reviews-section:before {
-  content: url(./../img/Ellipsereviews.png);
+  content: url(.//img/Ellipsereviews.png);
   position: absolute;
   bottom: -1.25rem;
   left: 5%;
 }
 
 .order-section {
-  background: url(./../img/backforma.png) center center/cover no-repeat;
+  background: url(./img/backforma.png) center center/cover no-repeat;
   position: relative;
   height: 100vh;
 }
 .order-section:before {
-  content: url(./../img/Polygon.png);
+  content: url(./img/Polygon.png);
   position: absolute;
   top: -1.375rem;
   right: 15%;

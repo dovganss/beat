@@ -1,9 +1,0 @@
-.reviews-section {
-  position: relative;
-}
-.reviews-section:before {
-  content: url(./../img/Ellipsereviews.png);
-  position: absolute;
-  bottom: rem(-20px);
-  left: 5%;
-}
